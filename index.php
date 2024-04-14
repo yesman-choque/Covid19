@@ -11,14 +11,14 @@
         <header>
             <h1>Casos e Mortes por Covid-19</h1>
     
-            <form action="data.php" method="post">
+            <form action="index.php" method="post">
                 <label for="countries-list">Escolha um país</label>
                 <select id="countries-list" name="country">
                     <?php
                         $countries = ['Brazil', 'Canada', 'Australia'];
                         foreach ($countries as $country) {
-                            if ($_GET['country'] !== null and $country === $_GET['country']) {
-                                echo '<option value="' . $_GET['country'] . ' " selected>' . $_GET['country'] . '</option>';
+                            if (isset($_POST['country']) and $country === $_POST['country']) {
+                                echo '<option value="' . $_POST['country'] . ' " selected>' . $_POST['country'] . '</option>';
                             } else {
                                 echo '<option value="' . $country . '">' . $country . '</option>';
                             }
