@@ -9,21 +9,12 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>Casos e Mortes por Covid-19</h1>
+            <h2>Casos e Mortes por Covid-19</h2>
     
             <form action="index.php" method="post">
                 <label for="countries-list">Escolha um país</label>
                 <select id="countries-list" name="country">
-                    <?php
-                        $countries = ['Brazil', 'Canada', 'Australia'];
-                        foreach ($countries as $country) {
-                            if (isset($_POST['country']) and $country === $_POST['country']) {
-                                echo '<option value="' . $_POST['country'] . ' " selected>' . $_POST['country'] . '</option>';
-                            } else {
-                                echo '<option value="' . $country . '">' . $country . '</option>';
-                            }
-                        }
-                    ?>
+                    <?php include 'options.php'?>
                 </select>
 
                 <button type="submit">Atualizar</button>
@@ -34,13 +25,12 @@
             <section>
                 <h2>Informações</h2>
                 <div id="data">
-                    <?php include 'states.php'; ?>
+                    <?php include 'data.php'; ?>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>Desenvolvido por Kidopi</p>
             <?php include 'last-access.php'; ?>
         </footer>
     </div>

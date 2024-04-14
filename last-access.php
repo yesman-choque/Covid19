@@ -4,7 +4,6 @@
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 
-    // get last access date
     $server = $_ENV['DB_HOST'];
     $user = $_ENV['DB_USER'];
     $pass = $_ENV['DB_PASS'];
@@ -15,14 +14,15 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT data FROM acessos ORDER BY data DESC LIMIT 1";
+    $sql = "SELECT data, pais FROM acessos ORDER BY data DESC LIMIT 1";
 
     try {
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
+        $country = $row['pais'];
         $lastAccess = $row['data'];
 
-        echo "<p>Último acesso: " . $lastAccess . "</p>";
+        echo "<p>Último acesso: " . $lastAccess . " - País: " . $country . "</p>";
 
     } catch (Exception $e) {
         echo "Error fetching data: " . $conn->error;
