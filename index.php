@@ -17,7 +17,7 @@
                     <?php include 'options.php'?>
                 </select>
 
-                <button type="submit">Atualizar</button>
+                <button type="submit">Buscar</button>
             </form>
         </header>
 

@@ -31,11 +31,11 @@
                 echo '<div>';
                     echo '<div class="data-bar">';
                         echo '<div class="bar" style="width: ' . $calc_cases . '%; background-color: #f00; height:20px">&nbsp</div>';
-                        echo '<p>' . $state->Confirmados . ' casos</p>';
+                        echo '<p>' . number_format($state->Confirmados, 0, ',', '.') . ' casos</p>';
                     echo '</div>';
                     echo '<div class="data-bar">';
                         echo '<div class="bar" style="width: ' . $calc_deaths . '%; background-color: #000; height:20px">&nbsp</div>';
-                        echo '<p>' . $state->Mortos . ' mortes</p>';
+                        echo '<p>' . number_format($state->Mortos, 0, ',', '.') . ' mortes</p>';
                     echo '</div>';
                 echo '</div>';
                 echo '</div>';

@@ -21,8 +21,9 @@
         $row = $result->fetch_assoc();
         $country = $row['pais'];
         $lastAccess = $row['data'];
+        $lastAccessFormatted = date('d/m/Y H:i:s', strtotime($lastAccess));
 
-        echo "<p>Último acesso: " . $lastAccess . " - País: " . $country . "</p>";
+        echo "<p>Último acesso: " . $lastAccessFormatted . " - País: " . $country . "</p>";
 
     } catch (Exception $e) {
         echo "Error fetching data: " . $conn->error;
