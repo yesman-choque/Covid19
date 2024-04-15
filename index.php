@@ -23,7 +23,11 @@
 
         <main>
             <section>
-                <h2>Informações</h2>
+                <h2>Informações Gerais</h2>
+                <div id="total">
+                    <?php include 'total.php'; ?>
+                </div>
+                <h3>Dados por estado</h3>
                 <div id="data">
                     <?php include 'data.php'; ?>
                 </div>

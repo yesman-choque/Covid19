@@ -4,6 +4,8 @@ Vamos adicionar essas funcionalidades ao README:
 
 Este projeto consiste em um painel interativo que permite acompanhar a situação da Covid-19 em três países: Brasil, Canadá e Austrália. Você poderá visualizar o número atualizado de casos confirmados e mortes em cada um desses países, além de dados detalhados por estado.
 
+![Painel de Monitoramento da Covid-19](./images/capa.png)
+
 ## Requisitos
 
 Antes de iniciar, verifique se sua máquina atende aos seguintes requisitos:
@@ -22,7 +24,7 @@ Antes de iniciar, verifique se sua máquina atende aos seguintes requisitos:
 
 - **Git:** Você precisará do Git para clonar o repositório do projeto. Você pode instalá-lo seguindo as instruções em [git-scm.com](https://git-scm.com).
 
-## Funcionalidades Adicionais
+## Funcionalidades
 
 Além de visualizar os dados gerais da Covid-19 em cada país, este painel oferece as seguintes funcionalidades adicionais:
 

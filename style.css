@@ -6,7 +6,6 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-color: #F4F8FB;
 
@@ -35,6 +34,39 @@ header {
     align-items: center;
 }
 
+header button {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header form label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header select {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 main {
     width: 100%;
     display: flex;
@@ -53,6 +85,37 @@ main section {
     gap: 50px;
 }
 
+#total {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#total p {
+    /* make a block */
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #edf1f5;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#total p:nth-child(1) {
+    background-color: #f33939;
+    color: white;
+}
+
+#total p:nth-child(2) {
+    background-color: #222222;
+    color: white;
+}
+
 #data {
     width: 100%;
     display: flex;
@@ -62,8 +125,8 @@ main section {
     /* gap: 50px; */
 }
 
-#data > div:nth-child(2n) {
-    background-color: #e8ecf0;
+#data > div:nth-child(2n - 1) {
+    background-color: #edf1f5;
 } 
 
 .states {
@@ -72,6 +135,7 @@ main section {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    align-items: center;
 
     gap: 20px;
 }
@@ -108,4 +172,12 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
