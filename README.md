@@ -1,5 +1,3 @@
-Vamos adicionar essas funcionalidades ao README:
-
 # Painel de Monitoramento da Covid-19
 
 Este projeto consiste em um painel interativo que permite acompanhar a situação da Covid-19 em três países: Brasil, Canadá e Austrália. Você poderá visualizar o número atualizado de casos confirmados e mortes em cada um desses países, além de dados detalhados por estado.
@@ -94,4 +92,4 @@ Siga as instruções abaixo para configurar e executar o projeto em sua máquina
 
 Você será redirecionado para o painel da Covid-19, onde poderá visualizar os dados atualizados da situação da pandemia nos países selecionados, bem como acessar as funcionalidades adicionais mencionadas acima.
 
-Se surgirem dúvidas ou problemas durante a execução do projeto, sinta-se à vontade para perguntar!
+Se surgirem dúvidas ou problemas durante a execução do projeto, sinta-se à vontade para entrar em contato!
